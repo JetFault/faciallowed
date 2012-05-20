@@ -4,8 +4,8 @@
 /* Receives JPEG webcam submission and saves to local file. */
 /* Make sure your directory has permission to write files as your web server user! */
 
-$base = '/home/jreptak/web/hip';
-$filename = '/faces/' . date('YmdHis') . '.jpg';
+$base = '../face/';
+$filename = date('YmdHis') . '.jpg';
 $absFilename = $base . $filename;
 $result = file_put_contents( $absFilename, file_get_contents('php://input') );
 if (!$result) {
@@ -13,7 +13,7 @@ if (!$result) {
 	exit();
 }
 
-$url = 'http://' . $_SERVER['HTTP_HOST'] . $filename;#. dirname($_SERVER['REQUEST_URI']) . '/' . $filename;
-print "$url\n";
+//$url = 'http://' . $_SERVER['HTTP_HOST'] . $filename;#. dirname($_SERVER['REQUEST_URI']) . '/' . $filename;
+//print "$url\n";
 
 ?>
