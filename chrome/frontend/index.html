@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Glowing Hipster</title>
+	
+    <style>
+    	body {
+			#min-width:500px;
+	        overflow-x:hidden;
+		}
+	</style>
+</head>
+
+<body>
+	<table><tr><td valign=top>
+	<h1>Glowing Hipster</h1>
+	
+	<!-- First, include the JPEGCam JavaScript Library -->
+	<script type="text/javascript" src="webcam.js"></script>
+	
+	<!-- Set up the page with webcam -->
+	<script type="text/javascript" src="setup.js"></script>
+	
+	<!-- Some buttons for controlling things -->
+	<br/><form>
+		<input type=button value="Configure..." onClick="webcam.configure()">
+		&nbsp;&nbsp;
+		<input type=button value="Take Snapshot" onClick="take_snapshot()">
+	</form>
+
+	<!-- Uploading image to server. -->
+	<script src="upload.js"></script>
+	
+	</td><td width=50>&nbsp;</td><td valign=top>
+		<div id="upload_results" style="background-color:#eee;"></div>
+	</td></tr></table>
+</body>
+</html>
