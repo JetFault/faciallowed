@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Glowing Hipster</title>
+	<title>Faciallowed</title>
 	
     <style>
     	body {
@@ -15,27 +15,24 @@
 </head>
 
 <body>
-	<table><tr><td valign=top>
-	<h1>Glowing Hipster</h1>
+	<h1>Faciallowed</h1>
 	
 	<!-- First, include the JPEGCam JavaScript Library -->
 	<script type="text/javascript" src="webcam.js"></script>
 	
 	<!-- Set up the page with webcam -->
 	<script type="text/javascript" src="setup.js"></script>
-	
+
 	<!-- Some buttons for controlling things -->
 	<br/><form>
 		<input type=button value="Configure..." onClick="webcam.configure()">
 		&nbsp;&nbsp;
 		<input type=button value="Take Snapshot" onClick="take_snapshot()">
 	</form>
-
-	<!-- Uploading image to server. -->
-	<script src="upload.js"></script>
 	
-	</td><td width=50>&nbsp;</td><td valign=top>
-		<div id="upload_results" style="background-color:#eee;"></div>
-	</td></tr></table>
+	<!-- Uploading image to server. -->
+	<script type="text/javascript" src="upload.js"></script>
+	
+	<div id="upload_results" style="background-color:#eee;"></div>
 </body>
 </html>

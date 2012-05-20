@@ -19,5 +19,9 @@ function my_completion_handler(msg) {
 		// reset camera for another shot
 		webcam.reset();
 	}
-	else alert("PHP Error: " + msg);
+	else {
+		document.getElementById('upload_results').innerHTML =
+			'<h1>Upload Failed!</h1>' +
+			'<h2>' + msg + '</h2>';
+	}
 }

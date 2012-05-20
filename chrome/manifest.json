@@ -1,14 +1,15 @@
 {
-	"name": "Glowing Hipster",
+	"name": "Faciallowed",
 	"version": "1.0",
 	"manifest_version": 2,
 	"description": "Block access based on facial recognition",
 	"browser_action": {
 		"default_icon": "icon.png",
-		"default_popup": "frontend/index.html"
+		"default_popup": "popup/index.html"
 	},
 	"permissions": [
-		"http://api.flickr.com/"
+		"http://jreptak.com",
+		"http://*.*"
 	]
 }
 
